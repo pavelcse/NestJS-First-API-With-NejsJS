@@ -11,7 +11,7 @@ import { UserModule } from './user/user.module';
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
-      port: 3306,
+      port: 3308,
       username: 'root',
       password: '',
       database: 'nest_app',

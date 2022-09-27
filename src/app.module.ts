@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { User } from './user/entity/user.entity';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
+import { ProfileModule } from './profile/profile.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { AuthModule } from './auth/auth.module';
       synchronize: true, // Only for development, otherswise false
     }),
     AuthModule,
+    ProfileModule,
   ],
   controllers: [AppController],
   providers: [AppService],
